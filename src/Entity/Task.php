@@ -4,11 +4,14 @@ namespace App\Entity;
 
 use App\Repository\TaskRepository;
 
+use ApiPlatform\Core\Annotation\ApiResource;
+
 use Symfony\Component\Validator\Constraints as Assert;
 
 use Doctrine\ORM\Mapping as ORM;
 
 /**
+ * @ApiResource()
  * @ORM\Entity(repositoryClass=TaskRepository::class)
  * @ORM\Table(name="tasks")
  */

@@ -4,13 +4,17 @@ namespace App\Entity;
 
 use App\Repository\ProjectRepository;
 
+use ApiPlatform\Core\Annotation\ApiResource;
+
 use Symfony\Component\Validator\Constraints as Assert;
 
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
+
 use Doctrine\ORM\Mapping as ORM;
 
 /**
+ * @ApiResource()
  * @ORM\Entity(repositoryClass=ProjectRepository::class)
  * @ORM\Table(name="projects")
  */
